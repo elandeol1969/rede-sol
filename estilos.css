@@ -1,0 +1,154 @@
+body {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+nav {
+  display: flex;
+  color: black;
+  position: fixed;
+  align-items: center;
+}
+
+.nav-wrapper {
+  margin-top: 0px;
+  padding-top: 4px;
+  background-color: black;
+}
+
+#redesolu a{
+  font-size: 24px;
+  margin-left: 250px;
+}
+
+#redesolu img {
+  height: 40px;
+  margin-top: 8px;
+  padding-bottom: 0px;
+}
+
+.brand-logo img {
+  height: 50px;
+  border-radius: 10%;
+  margin-top: 5px;
+  padding-bottom: 0px;
+}
+
+ #primeiradiv {
+ /*margin-top: 150px;*/
+  padding-top: 50px;
+  padding-bottom: 200px;
+  background-image: url('img/image6.jpg');
+  background-repeat: none;
+  background-size: cover;
+  height: 580px;
+
+}
+
+.secao-largura-limitada {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Seção conteúdo */
+.secao-conteudo {
+  padding: 30px 20px;
+}
+
+.secao-largura-limitada .imgbox {
+  text-align: justify;
+}
+
+.img-conteudo {
+  width: 250px;
+  margin: 12px 20px;
+  /*height: 180px;*/
+  border: 2px solid orange;
+  text-align: center;
+}
+
+.imgbox {
+  /*display: flex;
+  align-items: baseline;*/
+  text-align: justify;
+  width: 60%;
+  margin: 0px auto;
+}
+
+/* Seção com imagem de fundo e texto */
+.secao-background-divisao {
+  padding: 50px 50px;
+  text-align: center;
+  background-image: url('img/image2.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid orange;
+  margin: 0px;
+}
+
+.secao-background-divisao h3 {
+  font-size: 24px;
+  background-color: #fff;
+  width: 250px;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 12PX;
+  font-weight: bold;
+}
+
+#quemsomos {
+  font-size: 24px;
+  text-align: center;
+}
+
+#home {
+  text-align: center;
+}
+
+#home img {
+  height: 48px;
+  margin: 0 36px;
+  text-align: center;
+}
+
+span {
+  font-weight: bold;  
+  font-size: 20px;
+}
+
+.parag-governanca {
+  text-align: center;
+  margin: 16px;
+}
+
+#nossosvalores {
+  text-align: center;
+}
+
+ul {
+  margin: 16px 0px;
+  
+}
+
+li {
+  padding: 4px;
+}
+
+#home {
+  padding: 0px;
+  margin-bottom: 10px;
+}
+
+#home a {
+  text-decoration: none;
+  color: red;
+  font-size: 16px;
+  padding: 0px;
+}
+
+#home img {
+  height: 70px; 
+}
