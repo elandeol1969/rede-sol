@@ -39,7 +39,8 @@ nav {
 main {
   background: url("bg.jpg") no-repeat center center;
   background-size: cover;
-  height: 92vh;
+  height: 93vh;
+  background-color: black;
 }
 
 .nav-list {
@@ -68,7 +69,7 @@ main {
 /* INICIO*/
 
 .secao-largura-limitada {
-  width: 100%;
+  width: 92%;
   margin: 0 auto;
   text-align: center;
 }
@@ -83,7 +84,7 @@ main {
 }
 
 .img-conteudo {
-  width: 250px;
+  width: 350px;
   margin: 12px 20px;
   /*height: 180px;*/
   border: 2px solid orange;
@@ -102,6 +103,7 @@ main {
 /* Seção com imagem de fundo e texto */
 .secao-background-divisao {
   padding: 50px 50px;
+  width: 93%;
   text-align: center;
   background-image: url('img/image2.jpg');
   background-attachment: fixed;
@@ -117,7 +119,7 @@ main {
   width: 250px;
   margin: 0px auto;
   border-radius: 20px;
-  padding: 18PX;
+  padding: 9px;
   font-weight: bold;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
 }
@@ -147,15 +149,17 @@ span {
 }
 
 .parag-governanca {
-  text-align: justify;
+  text-align:left;
+  line-height: 26px;
   margin: 12px auto;
   width: 60%;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
 }
 
 #nossosvalores {
-  text-align: justify;
+  text-align: left;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  line-height: 26px;
   width: 60%;
   margin: 24px auto;
 }
@@ -201,7 +205,12 @@ li {
 
 
 @media (max-width: 999px) {
+  
   body {
+    overflow-x: hidden;
+  }
+
+  main {
     overflow-x: hidden;
   }
 
@@ -210,11 +219,12 @@ li {
     top: 8vh;
     right: 0;
     width: 50vw;
-    height: 92vh;
+    padding-left: 20px;
+    height: 62vh;
     background: #23232e;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    /*align-items: center;*/
+    justify-content:space-around;
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
   }
@@ -255,4 +265,34 @@ li {
 
 .mobile-menu.active .line3 {
   transform: rotate(45deg) translate(-5px, -7px);
+}
+
+/* Seção com imagem de fundo e texto */
+.secao-largura-limitada {
+  width: 92%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.secao-background-divisao {
+  padding: 50px 50px;
+  width: 93%;
+  text-align: center;
+  background-image: url('img/image2.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid orange;
+  margin: 0px;
+}
+
+.secao-background-divisao h3 {
+  font-size: 24px;
+  background-color: #fff;
+  width: 250px;
+  margin: 0px auto;
+  border-radius: 20px;
+  padding: 9px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
 }
