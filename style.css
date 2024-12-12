@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: #23232e;
+  height: 8vh;
+  position: fixed;
+  /* Torna e Barra de Menu FIXA*/
+  width: 100%;
+  /* A BARRA de MENU ocupa toda a largura da Tela */
+}
+
+.logo img {
+  height: 26px;
+}
+
+main {
+  background: url("bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 92vh;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+/* INICIO*/
+
+.secao-largura-limitada {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Seção conteúdo */
+.secao-conteudo {
+  padding: 30px 20px;
+}
+
+.secao-largura-limitada .imgbox {
+  text-align: justify;
+}
+
+.img-conteudo {
+  width: 250px;
+  margin: 12px 20px;
+  /*height: 180px;*/
+  border: 2px solid orange;
+  text-align: center;
+}
+
+.imgbox {
+  /*display: flex;
+  align-items: baseline;*/
+  text-align: justify;
+  width: 60%;
+  margin: 0px auto;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+/* Seção com imagem de fundo e texto */
+.secao-background-divisao {
+  padding: 50px 50px;
+  text-align: center;
+  background-image: url('img/image2.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid orange;
+  margin: 0px;
+}
+
+.secao-background-divisao h3 {
+  font-size: 24px;
+  background-color: #fff;
+  width: 250px;
+  margin: 0px auto;
+  border-radius: 20px;
+  padding: 18PX;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+#quemsomos {
+  font-size: 24px;
+  text-align: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+#home {
+  text-align: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+#home img {
+  height: 48px;
+  margin: 0 36px;
+  text-align: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+span {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+.parag-governanca {
+  text-align: justify;
+  margin: 12px auto;
+  width: 60%;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+#nossosvalores {
+  text-align: justify;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  width: 60%;
+  margin: 24px auto;
+}
+
+ul {
+  margin: 16px 0px;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+
+}
+
+li {
+  padding: 4px;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+#home {
+  padding: 0px;
+  margin-bottom: 10px;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+#home a {
+  text-decoration: none;
+  color: red;
+  font-size: 16px;
+  padding: 0px;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+#imgfooter {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+#imgfooter img {
+  height: 100px;
+}
+
+
+/* FIM */
+
+
+
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #23232e;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
