@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -29,7 +30,7 @@ nav {
     align-items: center;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     background: #23232e;
-    height: 8vh;
+    height: 10vh;
 }
 
 main {
@@ -52,7 +53,7 @@ nav a img {
 .nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
-    text-align: center;
+    text-align: right;
 }
 
 .mobile-menu {
@@ -103,7 +104,7 @@ h2 {
 
 p {
     width: 90%;
-    text-align: left;
+    text-align:left;
     margin: 0 auto;
     justify-content: left;
     line-height: 36px;
@@ -153,7 +154,7 @@ li {
 }
 
 .bottomdiv img {
-    height: 50px;
+    height: 60px;
     margin: 20px 0px 0px 0px;
 }
 
