@@ -50,6 +50,11 @@ nav a img {
     display: flex;
 }
 
+.nav-list .separa-logo_nav-list {
+    color:#23232e;
+    margin-right:50px;
+}
+
 .nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
