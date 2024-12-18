@@ -8,6 +8,13 @@ body {
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
 }
 
+header {
+    position: fixed;
+    top:0px;
+    left: 0px;
+    width: 100%;
+}
+
 a {
     color: #fff;
     text-decoration: none;
@@ -31,12 +38,7 @@ nav {
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     background: #23232e;
     height: 10vh;
-}
-
-main {
-    background: url("img/bg.jpg") no-repeat center center;
-    background-size: cover;
-    height: 92vh;
+    width: 100%;
 }
 
 nav a img {
@@ -50,10 +52,10 @@ nav a img {
     display: flex;
 }
 
-.nav-list .separa-logo_nav-list {
+/*.nav-list .separa-logo_nav-list {
     color:#23232e;
     margin-right:50px;
-}
+}*/
 
 .nav-list li {
     letter-spacing: 3px;
@@ -72,6 +74,12 @@ nav a img {
     background: #fff;
     margin: 8px;
     transition: 0.3s;
+}
+
+main {
+    background: url("img/bg.jpg") no-repeat center center;
+    background-size: cover;
+    height: 95vh;
 }
 
 .divisao {
