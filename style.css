@@ -79,7 +79,7 @@ nav a img {
 main {
     background: url("img/bg.jpg") no-repeat center center;
     background-size: cover;
-    height: 95vh;
+    height: 100vh;
 }
 
 .divisao {
